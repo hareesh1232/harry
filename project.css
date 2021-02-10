@@ -1,0 +1,155 @@
+body{
+    background-color:#f9e4dc;
+}
+h1{
+    margin-left:40%;
+    font-size:40px;
+    font-weight:200%;
+    letter-spacing:5px;
+    font-family: 'Anton', sans-serif;
+}
+.header {
+  padding: 10px;
+  height: 50px;
+  z-index: 1;
+}
+.header h4 {
+  float: center;
+}
+.content {
+  display: flex;
+  height: calc(100vh - 50px);
+}
+#menu-toggler{
+    color:#45f3ff;
+    font-size:35px;
+    padding:3px;
+    border-radius:5px;
+    background-color:#03080a;
+}
+
+.menu {
+    width:300px;
+  height: 100%;
+  padding: 20px 15px;
+  z-index: 1;
+    background-color:#f9a9dc;
+    border-radius:20px;
+}
+.menu h4 {
+  margin: 20px 0;
+  font-size:30px;
+}
+.menu label {
+  margin-top:0px;
+    font-size:27px;
+    font-weight:bold;
+}
+
+.menu input {
+  float: right;
+  width: 50px;
+  border-radius:50px;
+    background-color:#03080a;
+    color:#45f3ff;
+    padding:3px;
+}
+.buttonContainer {
+  margin: 50px 0;
+}
+#resetGrid{
+    font-size:20px;
+    border-radius:50px;
+    border:3px solid black;
+    padding:4px;
+    background-color:#03080a;
+    color:#45f3ff;
+}
+#changeEndNodes{
+    line-height:30px;
+    width:150px;
+    font-size:15px;
+    height:40px;
+    border:3px solid black;
+    border-radius:10px;
+    background-color:#03080a;
+    color:#45f3ff;
+}
+#startAlgorithm
+{
+    width:100px;
+    font-size:20px;
+    border-radius:50px;
+    border:3px solid black;
+    padding:4px;
+    background-color:#03080a;
+    color:#45f3ff;
+}
+.legendBox {
+  display: flex;
+  margin: 5px;
+}
+.legendDescription {
+  margin: auto 10px;
+}
+.green {
+  background-color: green !important;
+}
+.gridContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-y: scroll;
+}
+.grid {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border: 1px solid blue;
+  transition: 1s;
+}
+.gridRow {
+  display: flex;
+}
+.cell {
+  width: 40px;
+  height: 40px;
+  border: 1px solid blue;
+  margin: 0;
+}
+.cell:hover {
+  background-color: aliceblue;
+}
+.obstacle {
+  background-color: dimgray!important;
+}
+.obstacle:hover {
+  background-color: dimgray;
+}
+.start {
+  background-color: green !important;
+}
+.start:hover {
+  background-color: green;
+}
+.end {
+  background-color: red !important;
+}
+.end:hover {
+  background-color: red;
+}
+.visited {
+  background-color: aquamarine;
+}
+.path {
+  background-color: orangered;
+}
+.stopInteractions {
+  pointer-events: none;
+}
+.footer {
+  margin-top: 50px;
+  text-align: center;
+}
